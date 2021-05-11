@@ -1,4 +1,4 @@
-{% set version = '0.6.0' %}
+{% set version = "0.6.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/leaflet.minicharts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/leaflet.minicharts/leaflet.minicharts_{{ version }}.tar.gz
-  sha256: 4cb2e1fcdd67c2d00530dfdea461a364f8644fb6e83b445db9102ef9b6efbf9c
+  sha256: b1cb73353bce3bad82fd7d3d207615e9c4419b6cf4843547a8ed973f58caaf5e
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,12 +42,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=leaflet.minicharts
   license: GPL-2
-  summary: Add and modify small charts on an interactive map created with package 'leaflet'.
-    These charts can be used to represent at same time multiple variables on a single
-    map.
+  summary: Add and modify small charts on an interactive map created with package 'leaflet'. These charts can be used to represent at same time multiple variables on a single map.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
     - LICENSE
 
 extra:
