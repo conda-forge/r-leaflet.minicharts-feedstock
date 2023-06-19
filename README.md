@@ -1,11 +1,11 @@
-About r-leaflet.minicharts
-==========================
+About r-leaflet.minicharts-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-leaflet.minicharts-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=leaflet.minicharts
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-leaflet.minicharts-feedstock/blob/main/LICENSE.txt)
 
 Summary: Add and modify small charts on an interactive map created with package 'leaflet'. These charts can be used to represent at same time multiple variables on a single map.
 
